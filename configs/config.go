@@ -3,10 +3,11 @@ package configs
 import (
 	"errors"
 	"fmt"
-	"github.com/itering/subscan/util"
 	"net/url"
 	"os"
 	"strings"
+
+	"github.com/itering/subscan/util"
 
 	xtime "github.com/itering/subscan/pkg/time"
 
@@ -86,6 +87,7 @@ type Redis struct {
 	Active       int            `json:"active"`
 	ReadTimeout  xtime.Duration `json:"read_timeout"`
 	WriteTimeout xtime.Duration `json:"write_timeout"`
+	Tls          bool           `json:"tls"`
 }
 
 var Boot Bootstrap

@@ -3,8 +3,10 @@ package observer
 import (
 	"context"
 	"fmt"
+	"time"
+
+	"github.com/EstateXOfficial/go-workers"
 	"github.com/bitly/go-simplejson"
-	"github.com/itering/go-workers"
 	"github.com/itering/subscan-plugin/storage"
 	"github.com/itering/subscan/model"
 	"github.com/itering/subscan/plugins"
@@ -12,7 +14,6 @@ import (
 	"github.com/itering/subscan/util"
 	"github.com/itering/subscan/util/mq"
 	"github.com/shopspring/decimal"
-	"time"
 )
 
 func Consumption() {
